@@ -237,6 +237,7 @@
             </div>
           </div>
           <br />
+
           <div class="card" style="width: 20rem">
             <div class="card-body">
               <h5><b>Categories</b></h5>
@@ -344,35 +345,6 @@
               </div>
             </div>
           </div>
-          <!-- <div class="empat">
-            <h5>Tags</h5>
-            <hr />
-            <div class="btn">
-              <button class="shadow bg-light rounded">
-                <router-link to="/"><small> Home</small></router-link>
-              </button>
-              <button class="shadow bg-light rounded">
-                <router-link to="/product"><small> Produk</small></router-link>
-              </button>
-              <button class="shadow bg-light rounded">
-                <router-link to="/contact"
-                  ><small> Contact </small></router-link
-                >
-              </button>
-              <button class="shadow bg-light rounded">
-                <router-link to="/informasi"
-                  ><small> Informasi</small></router-link
-                >
-              </button>
-              <button class="shadow bg-light rounded">
-                <router-link to="/display"><small> Display</small></router-link>
-              </button>
-              <button class="shadow bg-light rounded">
-                <router-link to="/about"><small> About Us</small></router-link>
-              </button>
-            </div>
-          </div> -->
-          <br /><br />
         </div>
       </div>
     </div>
@@ -387,7 +359,9 @@
 .all {
   max-width: 1440px;
   margin: auto;
-  margin-bottom: 800px;
+}
+.col-3 {
+  width: 25%;
 }
 /* Bag 1 */
 .bag-1 {
@@ -406,14 +380,17 @@
 }
 .title h1 {
   font-weight: bold;
-  
 }
 .konten {
+  display: flex;
+  clear: both;
+}
+/* .konten
   display: grid;
   grid-template-columns: 800px 1fr 1fr;
   grid-template-rows: 80px 1fr 1fr 100px;
   grid-template-areas: "isiKonten isiKonten sidebarKonten";
-}
+} */
 /* Isi Konten */
 .product {
   width: 430px;
@@ -443,7 +420,7 @@
 .empat .btn {
   display: flex;
   flex-wrap: wrap;
-  gap: 5px;
+  gap: 2px;
 }
 .empat .btn button {
   padding: 1px 5px;
@@ -453,10 +430,19 @@
 }
 a {
   color: white;
-  
 }
 .shadow {
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-  
+}
+@media (max-width: 768px) {
+  .sidebarKonten {
+    display: none;
+  }
+  .bag-2 {
+    padding: 40px 180px;
+  }
+  a {
+    color: white;
+  }
 }
 </style>

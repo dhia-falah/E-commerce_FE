@@ -2,26 +2,21 @@
   <div>
     <div class="hdr-1">
       <div class="header-logo">
-        <p>
-          <a href="https://www.facebook.com/smkbinusasmg"
-            ><i class="fa-brands fa-facebook-f"></i
-          ></a>
-        </p>
-        <p>
-          <a href="https://twitter.com/smkbinusasmg"
-            ><i class="fa-brands fa-twitter"></i
-          ></a>
-        </p>
-        <p>
-          <a href="https://www.instagram.com/smkbinanusantara_smg/"
-            ><i class="fa-brands fa-instagram"></i
-          ></a>
-        </p>
-        <p>
-          <a href="https://www.youtube.com/channel/UCw5YNITJ8UTpWB9N55saWhw"
-            ><i class="fa-brands fa-youtube"></i
-          ></a>
-        </p>
+        <a href="https://www.facebook.com/smkbinusasmg"
+          ><i class="fa-brands fa-facebook-f"></i
+        ></a>
+
+        <a href="https://twitter.com/smkbinusasmg"
+          ><i class="fa-brands fa-twitter"></i
+        ></a>
+
+        <a href="https://www.instagram.com/smkbinanusantara_smg/"
+          ><i class="fa-brands fa-instagram"></i
+        ></a>
+
+        <a href="https://www.youtube.com/channel/UCw5YNITJ8UTpWB9N55saWhw"
+          ><i class="fa-brands fa-youtube"></i
+        ></a>
       </div>
       <div class="header-menu">
         <p><i class="fa-solid fa-clock"></i> &nbsp;mon-fri:10.00-18.00</p>
@@ -58,29 +53,27 @@
       </div>
     </div>
     <div class="hdr-3">
-      <div class="container">
-        <div>
-          <a href="/product"
-            ><button id="button" style="vertical-align: middle">
-              <span>Shop </span>
-            </button></a
-          >
-          <a href="/about"
-            ><button id="button" style="vertical-align: middle">
-              <span>AboutUs </span>
-            </button></a
-          >
-          <a href="/blog"
-            ><button id="button" style="vertical-align: middle">
-              <span>Blog </span>
-            </button></a
-          >
-          <a href="/contact"
-            ><button id="button" style="vertical-align: middle">
-              <span>ContactUs </span>
-            </button></a
-          >
-        </div>
+      <div>
+        <a href="/product"
+          ><button id="button" style="vertical-align: middle">
+            <span>Shop </span>
+          </button></a
+        >
+        <a href="/about"
+          ><button id="button" style="vertical-align: middle">
+            <span>AboutUs </span>
+          </button></a
+        >
+        <a href="/blog"
+          ><button id="button" style="vertical-align: middle">
+            <span>Blog </span>
+          </button></a
+        >
+        <a href="/contact"
+          ><button id="button" style="vertical-align: middle">
+            <span>ContactUs </span>
+          </button></a
+        >
       </div>
     </div>
   </div>
@@ -99,6 +92,7 @@ export default {
   max-width: 1440px;
   margin: auto;
 }
+
 .hdr-1 {
   background: rgb(5, 138, 143);
   padding: 10px 60px;
@@ -116,6 +110,22 @@ export default {
 }
 .header-menu p {
   font-weight: bold;
+}
+
+@media screen and (max-width: 768px) {
+  .hdr-1 {
+    display: block;
+    text-align: center;
+  }
+  .header-logo {
+    justify-content: center;
+  }
+  .header-logo a {
+    font-size: 25px;
+  }
+  .header-menu {
+    display: none;
+  }
 }
 
 .hdr-2 {
@@ -150,8 +160,8 @@ input {
 .hdr-3 {
   background: rgb(5, 104, 107);
   display: flex;
+  justify-content: center;
   gap: 1px;
-  text-align: center;
 }
 
 #button {

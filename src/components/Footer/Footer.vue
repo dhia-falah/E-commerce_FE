@@ -1,42 +1,6 @@
 <template>
   <div id="page-container">
-    <div id="content-wrap">
-      <!--<h1>
-        ini isi konten Lorem ipsum dolor sit amet consectetur adipisicing elit.
-        Aperiam, voluptatibus beatae. Consequuntur, dolorum in. Numquam deserunt
-        nulla cumque quidem ab rem hic minima cum distinctio, repellendus ea
-        libero ex quia! Lorem ipsum dolor sit amet consectetur adipisicing elit.
-        Minima odit eum rem consequuntur maiores beatae, unde numquam aspernatur
-        accusamus officia cum fugit. Porro inventore rem aut sunt incidunt?
-        Suscipit, ipsam. Lorem, ipsum dolor sit amet consectetur adipisicing
-        elit. Aut, cupiditate assumenda. Dolores dolorem sapiente, officiis
-        repellat atque est ullam enim reiciendis, ea iste quam ad in aliquam,
-        consectetur nobis impedit. Lorem, ipsum dolor sit amet consectetur
-        adipisicing elit. Nisi obcaecati delectus excepturi similique maxime
-        accusantium aliquam praesentium magnam aut sunt, porro nihil ratione,
-        facilis, repellendus minus aperiam optio vitae. Libero? Lorem ipsum
-        dolor sit amet consectetur adipisicing elit. Itaque libero laborum
-        ratione fugiat pariatur. Doloribus rem vel commodi dolore ducimus,
-        veniam blanditiis nesciunt iste excepturi sed voluptatum tempora qui
-        enim! Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, neque
-        aliquid velit voluptatum dolores suscipit unde, laboriosam rem porro
-        inventore dolorem eos eveniet expedita debitis repellendus illum
-        nesciunt qui nobis? Lorem ipsum dolor, sit amet consectetur adipisicing
-        elit. Reprehenderit voluptas quam repellendus recusandae dolor quaerat,
-        officiis earum, a eum possimus praesentium aspernatur expedita sit? Vero
-        quibusdam voluptas qui aliquam excepturi. Lorem ipsum dolor sit amet
-        consectetur adipisicing elit. Repudiandae nisi illo dolore maxime. Velit
-        incidunt saepe sapiente? Eveniet itaque id consectetur esse, quia sint
-        dolor nostrum soluta culpa omnis corrupti. Lorem ipsum dolor sit amet
-        consectetur adipisicing elit. Qui, quod cumque provident quasi
-        exercitationem autem laudantium perspiciatis accusamus amet doloremque
-        alias vitae eius maiores totam. Libero architecto alias soluta id Lorem,
-        ipsum dolor sit amet consectetur adipisicing elit. Laboriosam dolor
-        nulla exercitationem odio porro eos sapiente atque qui ea! At unde
-        ratione deserunt quasi facilis modi dolores delectus accusantium
-        laboriosam.
-      </h1>-->
-    </div>
+    <div id="content-wrap"></div>
     <footer id="footer">
       <footer
         class="text-center text-lg-start text-white"
@@ -48,8 +12,7 @@
               <h6 class="text-uppercase mb-4 font-weight-bold">Company name</h6>
               <p>
                 Here you can use rows and columns to organize your footer
-                content. Lorem ipsum dolor sit amet, consectetur adipisicing
-                elit.
+                content.
               </p>
             </div>
 
@@ -162,20 +125,20 @@ export default {
   width: 100%;
   height: auto; /* Footer height */
 }
-
-#page-container {
-  position: relative;
-  min-height: 100vh;
-  text-decoration: none;
-  text-align: justify;
-}
-#content-wrap {
-  padding-bottom: 2.5rem; /* Footer height */
-}
 #footer {
-  position: absolute;
-  bottom: 0;
+  /* position: absolute; */
+  /* bottom: 0; */
   width: 100%;
   height: 2.5rem; /* Footer height */
+  margin-bottom: -500px;
+}
+.row {
+  text-align: justify;
+}
+
+@media only screen and (max-width: 768px) {
+  .row {
+    text-align: justify;
+  }
 }
 </style>
